@@ -1,3 +1,4 @@
+#autore: Ho fatto tutto da solo, ma devo dire grazie a Luca Patruno che mi ha aiutato ad utilizzare la stringa 11
 from guizero import *
 import string
 import numpy as np
