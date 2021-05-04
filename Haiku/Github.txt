@@ -1,5 +1,0 @@
-#Gruppo
-- Ferdinando Interfaccia Grafica
-- Alberto Mozzarella
-- Renato
-- Mattia
