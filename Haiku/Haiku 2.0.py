@@ -9,8 +9,17 @@ def genera_haiku():
     haiku2=random.choice(f2.readlines())
     haiku3=random.choice(f3.readlines())
     listbox= ListBox(app, width=125, height=55, items=[haiku1, haiku2, haiku3])
-                                                           
-app=App(title="Generatore di Haiku")
-intro=Text(app, text="Benvenuto su Generatore di Haiku!")
+    listbox.bg="white"
+    listbox.font="Arial"
+    listbox.text_size="10"
+    text_box = TextBox(app, text="", width="fill", height="1")
+    
+app=App(title="Generatore di Haiku", bg = "#222255")
+intro_box = Box(app, width="fill", align="top", border=True)
+intro=Text(intro_box, text="Benvenuto nel Generatore di Haiku!", font='Arial', size='16', color='white')
 bottone=PushButton(app, text="Genera Haiku", command=genera_haiku)
+bottone.bg="white"
+bottone.text_size="12"
+bottone.font="Arial"
+text_box = TextBox(app, text="", width="fill")
 app.display()
